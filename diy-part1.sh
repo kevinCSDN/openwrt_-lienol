@@ -15,7 +15,7 @@
 sed -i '/luci/s/^/#/' feeds.conf.default
 
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git lede_luci https://github.com/coolsnowwolf/luci' feeds.conf.default
+#sed -i '$a src-git lede_luci https://github.com/coolsnowwolf/luci' feeds.conf.default
 sed -i '$a src-git packages1 https://github.com/coolsnowwolf/packages' feeds.conf.default
 sed -i '$a src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
 sed -i '$a src-git routing https://github.com/coolsnowwolf/routing' feeds.conf.default
