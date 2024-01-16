@@ -36,17 +36,17 @@ git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/
 
 
 
-git clone https://github.com/kiddin9/openwrt-packages
-shopt -s extglob
-rm -rf openwrt-packages/!(luci-app-turboacc|shortcut-fe|dnsforwarder)
-cp -r openwrt-packages/{luci-app-turboacc,dnsforwarder} package/
-rm -rf openwrt-packages
+#git clone https://github.com/kiddin9/openwrt-packages
+#shopt -s extglob
+#rm -rf openwrt-packages/!(luci-app-turboacc|shortcut-fe|dnsforwarder)
+#cp -r openwrt-packages/{luci-app-turboacc,dnsforwarder} package/
+#rm -rf openwrt-packages
 
-git clone https://github.com/coolsnowwolf/luci #tree/master/applications/luci-app-autoreboot
-shopt -s extglob
-rm -rf luci/applications/!(luci-app-autoreboot)
-cp -r luci/applications/luci-app-autoreboot package/
-rm -rf luci
+#git clone https://github.com/coolsnowwolf/luci #tree/master/applications/luci-app-autoreboot
+#shopt -s extglob
+#rm -rf luci/applications/!(luci-app-autoreboot)
+#cp -r luci/applications/luci-app-autoreboot package/
+#rm -rf luci
 
 
 #删除feeds自带mosdns、v2ray-geodata
